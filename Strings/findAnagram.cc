@@ -11,7 +11,7 @@ int FindAnagram(string txt, string ptr)
         intcountP[ptr[i]]++;
         intcountT[txt[i]]++;
     }
-    for(i=ptr.length();i<txt.length();i++)
+    for(i=ptr.length();i<=txt.length();i++)
     {
         if(isCountSame(intcountT, intcountP))
         {
